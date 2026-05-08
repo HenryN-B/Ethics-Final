@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Henry Norton-Bower</title>
+  <title>Ethical Issues Behind Video Game Monetization</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
 
- <!-- Header / Navbar -->
+  <!-- Header / Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
       <div class="container">
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link " href="index.html" aria-current="home page">Home</a>
+              <a class="nav-link" href="index.html" aria-current="home page">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="stakeholders.html">Stakeholders</a>
@@ -35,8 +35,15 @@
             <li class="nav-item">
               <a class="nav-link" href="monetizations.html">Monetization</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="more.html">More</a>
+            <li class="nav-item dropdown">
+              <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown">
+                More
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                <li><a class="dropdown-item" href="sources.html">Sources</a></li>
+                <li><a class="dropdown-item" href="recommendations.html">Game Recommendations</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -47,69 +54,323 @@
 
   <!-- Main Content -->
   <main id="main-content" class="container mt-5">
+  <h1 class="mb-4">Who are the stakeholders?</h1>
 
-    <h1 class="mb-4">Welcome to MySite</h1>
+  <section id="stake-holders" aria-labelledby="stakeholders-heading">
+    <div class="row">
 
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="mb-2">About me</h2>
+      <!-- Left: Stakeholder Content -->
+      <div class="col-md-8">
 
-      <div class="row">
-        <div class="col-md-8">
+        <div id="section-players" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Players</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <p class= "stakeholder-text">These are the individuals who purchase, and play the games on a regular basis. 
+                  They range from casual gamers who play occasionally to enthusiasts who invest significant 
+                  time and money into gaming sometimes referred to as a whale. Their relationship to this topic 
+                  is very direct, as they are the ones targeted by monetization strategies and providing much 
+                  of the funding for the game. </p>
+
+                  <br>
+
+                  <p class= "stakeholder-text">Players can be harmed by aggressive monetization practices such as loot boxes, 
+                  pay-to-win mechanics, and battle passes especially due to addictions.
+                  These systems are designed to encourage continuous spending, which can lead to 
+                  financial strain or addiction. Players may find themselves locked behind paywalls for 
+                  content that feels essential to the full experience of the game
+                  </p>
+
+                  <br>
+
+                  <p class= "stakeholder-text">When considering actions we need to consider that players have an interest in fair, 
+                  transparent pricing where they know what they are paying for upfront. They deserve access to a complete,
+                  enjoyable gaming experience without being pressured into additional purchases. 
+                  Their financial well-being and mental health should be protected from exploitative spending mechanics. 
+                  But they also recognize that games do need to be monetized to some extent.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div id="section-developers" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Developers</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <p class= "stakeholder-text">
+                  These are the people who develop and create the games often in small, 
+                  teams in a game studio. They work with game publishers to publish games 
+                  that they hope will be fun and that they are proud of working on. Their relationship 
+                  to monetization is complex because they are often the ones tasked with 
+                  implementing monetization systems, but they do not always 
+                  have full control over those decisions or agree with how it is being implemented. 
+                  They have a responsibility to make sure that games do not have predatory monetization strategies.
+                  </p>
+
+                  <br>
+
+                  <p class= "stakeholder-text">
+                  Developers face ethical decisions on how to implement monetization strategies. 
+                  Pressure from higher ups at the game studio or game publishers may make developers 
+                  implement monetization strategies they disagree with. But also monetization is 
+                  important because it creates a source of income and creates job security for developers.
+                  </p>
+
+                  <br>
+
+                  <p class= "stakeholder-text">
+                  Developers have an interest in making an enjoyable game that many want to play, 
+                  while also implementing ways that this game will generate money in a way that 
+                  won't ruin players' experiences. They also want to maintain a positive reputation 
+                  in the gaming community. 
+                  It is also worth considering that many developers have spoken out publicly about the pressure 
+                  they face from publishers to include monetization features. 
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="section-publishers" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Publishers</h2>
+          <div class = "card">
+            <div class = "card-body">
+              <div class="row">
+                <p class = "stakeholder-text"> 
+                The publishers are the people who market, finance, and distribute the video games.
+                Publishers like Devolver often work with small studios like Dodge Roll to release their games. 
+                The publishers get a cut of the profits from the game sales. It seems fairly normal 
+                for publishers to take 30% of revenue from sales, or sometimes they'll increase the rate for a certain
+                amount of time, like 70% until the advertising cost is covered. 
+                Publishers are more focused on making money and helping a game make money. 
+                </p>
+
+                <br>
+
+                <p class = "stakeholder-text">
+                As stated publishers are mostly concerned with making money.
+                This means that a lot of the pricing decisions often come from publishers. 
+                Let's take a look at Devolver again. Almost all of their games are a single upfront price between $10-$25. 
+                They chose this price based on game depth, franchise, platform, and several other factors. Other publishers 
+                like Activision instead price their games much higher and have in game battle-passes or skins which cost money.
+                </p>
+
+                <br>
+
+                <p class = "stakeholder-text">
+                As said earlier, publishers mostly want to make money. 
+                This means most of them are interested in just that. 
+                Some publishers also take into consideration their public image, 
+                and types of games. Once again, Devolver mostly publishes $10-$25 indie games. 
+                Most games are polished and high quality, while being kept at a low price for games. 
+                They still make a lot of money because of their good public image despite 
+                not pursuing more profitable forms of monetization. 
+                </p>
+
+                <br>
+
+                <p class = "stakeholder-text">
+                Publishers hold the most responsibility 
+                for issues caused by poor monetization, as 
+                they are the ones who decide how games are monetized. 
+                This holds for developers who publish their own games.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="section-parents" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Parents</h2>
+            <div class = "card">
+              <div class = "card-body">
+                <div class="row">
+                  <p class = "stakeholder-text"> 
+                  Playing video games is most popular with younger generations. 
+                  This means that parents are often the ones who have to fund their 
+                  children's video game hobbies. Depending on the games, some people can 
+                  spend a lot of money on video games, 
+                  which can be a stress on the financial situation of families. 
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  Parents are affected by video game monetization in several significant ways. 
+                  Financially, modern monetization strategies such as loot boxes, battle passes, 
+                  and microtransactions for in-game items can lead to children spending far 
+                  more money than a parent initially anticipated. 
+                  A game that appears cheap or free upfront may end up costing a 
+                  family hundreds of dollars over time. Looking beyond finances, 
+                  parents may also face social pressure, 
+                  as children often feel compelled to spend money to keep up with 
+                  peers who have purchased in-game items or upgrades. 
+                  Parents may also be concerned about the psychological tactics used
+                   by game developers to encourage spending, 
+                   such as limited-time offers and artificial scarcity, 
+                   which can be especially manipulative toward younger, more impressionable players.
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  When making a decision on a course of action, 
+                  the following interests of parents should be taken into account.
+                   Games should have the ability to set clear spending limits and have robust parental controls, 
+                   transparency from game developers about what monetization features exist within a 
+                   game before purchase, protection of their children from predatory or manipulative 
+                   spending mechanics, and access to clear information about age-appropriateness of 
+                   monetization systems so they can make informed decisions.
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text" >
+                  Parents have the responsibility to check what their children are playing and spending money on. 
+                  They have the power to give or withhold their own money for their children to use on games. 
+                  Even though they're not normally the users of the games,
+                   they still hold a fair amount of control and responsibility in this scenario. 
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="section-children" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Children</h2>
+            <div class = "card">
+              <div class = "card-body">
+                <div class="row">
+                  <p class = "stakeholder-text"> 
+                  Video games are most popular with younger generations.
+                   Some games cost more money than others, and some 
+                   free games with loot box mechanics like CsGo or many others can entice people to spend a lot of money. 
+                   Children are especially susceptible to these addictive loot box mechanics, 
+                   and don't have the developed self control to stop themselves from buying a lot of skins or other games. 
+                   Children also fall victim to social pressure more easily, 
+                   and games like roblox combine addictive mechanics with social pressure to increase spending among children. 
+                   They are a venerable stakeholder, and when making a decision we should make sure they are protected.
+                  
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  Children are affected by this because they are especially susceptible to the psychological
+                   mechanics built into modern game monetization. Loot boxes, for example, 
+                   replicate the structure of gambling by offering randomized rewards in exchange 
+                   for real money, creating excitement and anticipation that can be highly addictive. 
+                   Because children have less developed impulse control and decision-making skills than adults,
+                    they are less equipped to recognize or resist these tactics. 
+                    This can lead to significant unintended spending, often without full parental awareness.
+
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  First and foremost we should prioritize the safety of these kids and the games they play. 
+                  Of course there will always be games that are not appropriate for children, 
+                  so it's important to try and funnel children to play appropriate and safe games. 
+                  Part of what should make these games safe for children is a control over monetization. 
+                  No addictive gambling like loot box mechanics, or other monetized mechanics that might make it 
+                  unhealthy for children to play those games. 
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="section-platforms" class="stakeholder-section mb-5">
+          <h2 class="mb-2">Game Distributor Platforms</h2>
+            <div class = "card">
+              <div class = "card-body">
+                <div class="row">
+                  <p class = "stakeholder-text"> 
+                  Game distribution companies give a platform for players to find wide varieties of games easily. 
+                  There are not many distribution companies, the only notable ones are Nintendo,
+                   Xbox, PlayStation, Epic Games, and Steam. Many of these are only for their own console, 
+                   like the Nintendo store for the Nintendo switch. The biggest platform is Steam, 
+                   which takes a 30% cut from each sale and each in-game purchase made through the steam wallet. 
+                   This means they make money from games with an upfront price and free games with in-app purchases. 
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  These companies's goals are to make money. Different and improved ways of making games profitable 
+                  is also an improvement for the distribution companies. Although, most distribution companies don't have 
+                  many guidelines for the games on their platforms, and don't involve themselves in the development of games. 
+                  This means that the only real way for these companies to increase their revenue is to attract 
+                  more people to their service, or implement other methods of making money for their service. 
+                  Steam does this by making their platform extremely user friendly, 
+                  and having a very positive public image, and not having intrusive advertisements on their platform. 
+                  In addition they also have several games on their distribution platform that make them money and they've 
+                  started to create other consoles like the Steam Deck.
+                  </p>
+
+                  <br>
+
+                  <p class = "stakeholder-text">
+                  Game distribution platforms hold a lot of responsibility over what they do and don't allow on their platforms. 
+                  They have the ability to allow what some developers do, and the responsibility over what they allow. 
+                  </p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Sticky Nav -->
+      <div class="col-md-4">
+        <nav class="sticky-top" style="top: 1.5rem;" aria-label="Jump to stakeholder">
           <div class="card">
             <div class="card-body">
-              <p>Hello i am me.</p>
+              <p class="card-title fw-semibold mb-3">Jump to stakeholder</p>
+              <ul class="list-unstyled mb-0" id="stakeholder-nav">
+                <li><a class="stakeholder-nav-link" href="#section-players">Players</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-developers">Developers</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-publishers">Publishers</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-parents">Parents</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-children">Children</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-platforms">Game Distributor Platforms</a></li>
+              </ul>
             </div>
           </div>
-        </div>
-
-
-        <div class = "col-md-4">
-          <img src="img.jpeg" alt= "photo of a lake" style="width: 100%; max-width: 300px; height: 90%;">
-        </div>
+        </nav>
       </div>
 
+    </div>
+  </section>
+</main>
+
+    <section class="footer-section" id="footer-section" aria-labelledby="footer-heading">
       <div class="row">
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link active" href="index.html" aria-current="home page">Home</a>
-            </div>
-          </div>
+        <div class="col-md-2">
+          <a class="footer-link" href="index.html">Home</a>
         </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">Stakeholders</a>
-            </div>
-          </div>
+        <div class="col-md-2">
+          <a class="footer-link" href="stakeholders.html">Stakeholders</a>
         </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">Options</a>
-            </div>
-          </div>
+        <div class="col-md-2">
+          <a class="footer-link" href="monetizations.html">Monetization</a>
         </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">More</a>
-            </div>
-          </div>
-        </div>
-      
+              <div class="col-md-2 ms-auto">
+        <a class="footer-link" href="https://github.com/HenryN-B/Ethics-Final">Source Code</a>
+    </div>
       </div>
-    </section>
-
-  </main>
+  </section>
 
 
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="static/js/stakeholders.js"></script>
 
 </body>
 </html>
