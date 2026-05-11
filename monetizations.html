@@ -55,68 +55,420 @@
   <!-- Main Content -->
   <main id="main-content" class="container mt-5">
 
-    <h1 class="mb-4">Welcome to MySite</h1>
+     <h1 class="mb-4">Explore the different options</h1>
 
-    <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading" class="mb-2">About me</h2>
+    <p class = "mon-text col-md-10">
+      There are many ways to monetize a video game and many games 
+      make use of several different kinds of monetization. 
+      Along with each type, there will be one good and one bad example of a 
+      game that uses this type of monetization. 
+      The following tabs are some of the different types of monetization. 
+      Be warned, each of these descriptions come with a cost! 
+      Each design will cost you some amount of pengles, 
+      the currency of this website which is earned by pressing the button below.  
+    </p>
 
-      <div class="row">
-        <div class="col-md-8">
-          <div class="card">
+    <div class="form-check form-switch mt-3">
+      <input class="form-check-input" type="checkbox" role="switch" id="toggle-switch">
+      <label class="form-check-label" for="toggle-switch">Toggle interactive element</label>
+    </div>
+
+      <!-- Two column on the size -->
+    <div class="row mt-4">
+
+      <!-- Sticky sidebar -->
+      <div class="col-md-4 order-md-2">
+        <div class="sticky-top" style="top: 1.5rem;">
+
+          <!-- Jump nav -->
+          <div class="card mb-3">
             <div class="card-body">
-              <p>Hello i am me.</p>
+              <p class="fw-semibold mb-3">Jump to section</p>
+              <ul class="list-unstyled mb-0" id="monetization-nav">
+                <li><a class="stakeholder-nav-link" href="#section-upfront">Upfront Price Tag</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-dlc">Downloadable Content (DLC)</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-ads">Ads</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-skins">Skins</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-lootbox">Lootboxes</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-battlepass">Season passes & Subscriptions</a></li>
+                <li><a class="stakeholder-nav-link" href="#section-bonus">Bonuses</a></li>
+              </ul>
             </div>
           </div>
-        </div>
 
+          <!-- Pengles -->
+          <div class="card">
+            <div class="card-body text-center">
+              <button class="money-button w-100 mb-3" id="money-button">Get pengles</button>
+              <p class="mb-0">Total pengles: <span id="money-count">0</span></p>
+            </div>
+          </div>
 
-        <div class = "col-md-4">
-          <img src="img.jpeg" alt= "photo of a lake" style="width: 100%; max-width: 300px; height: 90%;">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link active" href="index.html" aria-current="home page">Home</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">Stakeholders</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">Options</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class = "card">
-            <div class ="card-body">
-              <a class="nav-link" href="stakeholders.html">More</a>
-            </div>
-          </div>
-        </div>
       
+      <!-- Main text content  -->
+      <div class="col-md-8 order-md-1">
+        <section class="text information">
+
+          <div id="section-upfront" class="monetization-section">
+            <h2 class="mb-3">Upfront Price Tag</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                            Some games are paid for with an upfront price tag.
+                      This is a very familiar kind of monetization, 
+                      as it's the same as how you buy almost anything that's not online. 
+                      You get a price tag, maybe $25, and you get the game. 
+                      That's the only cost, and you only have to pay it once. 
+                      The price is set by the developer or publisher. Often, 
+                      these games are released and only updated for a limited time 
+                      before the studio moves on to a different game. 
+
+                      <br>
+                      <br>
+                      This monetization type is very normalised and standard. 
+                      It's normally good for the consumers, they know how much they 
+                      have to pay for the game and won't ever have to pay more. 
+                      There are no hidden fees, recurring purchases, 
+                      or unmanageable forms of payment. However, for developers, 
+                      these games have a very fixed revenue stream. 
+                      A game like this is usually only popular for around a year, 
+                      so studios have a sustainable revenue stream for a year, 
+                      until they have to hope they have enough funding to make their next game. 
+
+                      <br>
+                      <br>
+                      A game that uses this monetization well is Hollow Knight by Team Cherry. 
+                      It is a $15 game, and is playable for tens to hundreds of hours. 
+                      A game that uses this monetization poorly is You Want to Watch t
+                      he World Burn by Ashroo. This game is $1000, and does not offer 
+                      $1000 worth of content, as it is a short game about setting some 
+                      things on fire. This is a silly example, but opinion of whether 
+                      a game is a good or bad example of pricing is relatively subjective, 
+                      and ultimately it's the developers decision to decide how much it's worth. 
+
+                      <br>
+                      <br>
+                      This specific form of pricing has very few bad effects for the
+                      consumer, other than the light hit to their wallet. 
+                      Looking at it from the perspective of Deontology,  
+                      this allows users to buy what they want without 
+                      trapping them in addictions or hidden subscriptions, 
+                      thus respecting a person's own rights. 
+                    </p>
+                </div>
+                <button class="hidden-overlay" id="upfront">Pay $60 to unlock</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-dlc" class="monetization-section">
+            <h2 class="mb-3">Downloadable Contact(DLC)</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                    Sometimes a developer might want to continue developing a game and release updates. 
+                    However, this often doesn't bring in many more players, 
+                    thus doesn't create the income needed for a development team. 
+                    Another option they have is to create extra Downloadable Content or a DLC.
+                     A DLC is an update or extension to a game that has a price. 
+                     This means that the players of the game pay for the new content 
+                     which lets the developer continue making updates and working on the game.
+
+                    <br>
+                    <br>
+
+                    This  is often a good way to expand a game while making new revenue for the developers. 
+                    Most game updates don't bring in a large amount of new players, 
+                    but often bring back a lot of old players who might have stopped playing the game for a while. 
+                    A DLC will bring back these old and concurrent players, 
+                    and help the studio keep its door open. DLCs cause very few issues, 
+                    one of which is the financial barriers for some players. 
+                    In addition DLCs can break up the player base, 
+                    with some players only playing the base game while others play with the DLCs. 
+
+                    <br>
+                    <br>
+
+                    For DLCs a game that does DLCs well is the Darkest Dungeon. 
+                    It has a total of 4 DLCs that add a large amount of extra playable content 
+                    for players, and the total for all 4 DLCs is $25, which is not a ridiculous price. 
+                    A game that does this poorly is Train Simulator. Train Simulator currently 
+                    has 751 different DLCs which cost a total of ~$11,000. The ridiculous price and amount of 
+                    DLCs make playing the full game a herculean feat along with being inaccessible to most players.
+                    Once again this is a silly example, probably no one has ever played every 
+                    Train Simulator DLC and people can just pick and choose which options they want to play.
+
+                    <br>
+                    <br>
+
+                    From the viewpoint of Utilitarianism, this monetization option is a very good choice. 
+                    It makes players happy by giving them new content and updates to a game they enjoy, 
+                    and it let's studios keep making money off an old game. 
+                    </p>
+                </div>
+                <button class="hidden-overlay" id="dlc">Pay a extra $20 to unlock</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-ads" class="monetization-section">
+            <h2 class="mb-3">Ads</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                    This is one of the most popular forms of monetization and is primarily a 
+                    strategy in the mobile game market. Games will employ a free to play or free 
+                    to download model, in which when a player plays the app, they receive ads. 
+                    This can be randomly, after completing levels, or user-initiated for some 
+                    in-game reward. Many games also have a one-time real money purchase to 
+                    disable ads. This option is very popular, and generally well received 
+                    when done correctly, though much of the time it is done in a predatory 
+                    manner that violates the virtues of players. According to a study done by 
+                    Usercentrics 90% of mobile games fail to comply with regulations of data 
+                    collection, and or collect data from children. 
+                    <br>
+                    <br>
+                    When done correctly, advertising can be a method for a game to remain free to play 
+                    for all users, while also managing to make money for the developer. 
+                    Even though almost no one likes watching ads, it can be relatively unintrusive 
+                    and allows the experience to remain free. However advertising can be done poorly, 
+                    in a way that collects data from young users and feeds them targeted advertising, 
+                    or advertise inappropriate content to all users for example. 
+                    <br>
+                    <br>
+                    A game like My Singing Monsters does advertising fairly well, there are not too many ads, 
+                    they don't advertise inappropriate content, and they let you choose to watch an ad to gain resources. 
+                    An example of games that do advertising poorly are games by Lion Studio. 
+                    They play many, many ads, sometimes inappropriate.
+                    It makes the player experience very difficult to play the game that drives most players away. 
+                    <br>
+                    <br>
+                    This system can be harmful some users, especially children, 
+                    or those who struggle with addiction. 
+                    Children might be shown inappropriate advertising on some games, 
+                    which can be harmful for development.
+                     In addition, for those who struggle with addiction gambling, 
+                     they can be shown advertisements for gambling games which may be harmful. 
+                     <br>
+                     <br>
+                     Looking at this from the perspective of utilitarianism, 
+                     advertising is a good method of monetising a game, while letting it be free 
+                     for all users, it lets everyone, regardless of wealth or class play 
+                     their game freely, and enjoy what the developers have made. 
+                     However this is only if it is not done in a destructive manner. 
+
+                  </p>
+                </div>
+                <button class="hidden-overlay" id="ad">Watch one ad to unlock</button>
+              </div>
+            </div>
+          </div>
+
+        <div id="section-skins" class="monetization-section">
+            <h2 class="mb-3">Skins</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                    Skins are a common way to monetize games, 
+                    and it is the method used by some of the most popular games. 
+                    Often the way this works is the game is a 
+                    competitive multiplayer game and is usually free. 
+                    Each player has a set "default" appearance on their character, 
+                    but they can buy “skins” to change their in-game appearance. 
+                    This mostly does nothing to affect the actual gameplay and doesn't give the players 
+                    an unfair advantage, but it lets them customize the game to themselves. 
+                    
+                    <br>
+                    <br>
+
+                    This lets players play the game for free while also maintaining enough 
+                    revenue to keep the game running. This is relatively good for most players, 
+                    although some can get caught up in skins and spend more money than they should. 
+                    These games often rely on these players that spend more than they should, 
+                    and they're known as whales. 
+                    <br>
+                    <br>
+
+                    A good example of using skins as a method of monetization is Fortnite. 
+                    They let players buy skins and they have several thousand different 
+                    skins to choose from. 
+                    This lets most players play for free and those who want to can 
+                    customize their appearance in whatever way they wish. 
+                  </p>
+                  <button aria-label="Button to buy a skin" class = "skin-button" id = "skin-button">
+                  Buy a skin for all buttons!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-lootbox" class="monetization-section">
+            <h2 class="mb-3">Loot Boxes</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                    A common form of monetization in free-to-play live service games is loot boxes. 
+                    Loot boxes are a mechanic where you buy a "lootbox" and you get an item from the box.
+                     Loot boxes often have different rarities of the items you can get from them. 
+                     Often it will be a Common up to Legendary rarity for most games. 
+                     The common rarity items from lootboxes normally aren't very desired, 
+                     but the legendary items are the most desired.
+
+                     <br>
+                     <br>
+
+                    There are 2 main types of loot boxes in games, skins
+                     (see the skins section), and characters. Many games with loot boxes 
+                     let you unlock skins of different qualities. For example,
+                      Overwatch has a skins system, where each lootbox gives you 4 skins of common, 
+                      rare, epic, or legendary quality. Other games, 
+                      often known as gacha games, 
+                      have loot boxes where you unlock characters in the boxes.
+                       An example of this is a game like Battle Cats, 
+                       where you unlock different cats to battle with from the lootboxes. 
+
+                       <br>
+                     <br>
+
+                      A good example of lootboxes is Battle Cats. 
+                      Battle Cats lets you collect an in-game currency (See related section)
+                      that you can use to buy the lootboxes. 
+                      You can also buy the in game currency to speed up and get more 
+                      lootboxes, which helps you progress through the game. A bad example 
+                      of this is CSGO. CSGO uses loot boxes  for skins of the weapons in game. 
+                      These loot boxes have led many to develop real harmful gambling additions. 
+                      Part of why CSGO in particular is so harmful is 
+                      because you can sell in-game skins for real-world money,
+                       and some skins can go for millions of dollars. 
+                       This means you can gamble on opening these loot crates for the almost
+                        nonexistent potential of winning millions of dollars from luck alone,
+                         which is very harmful to the players. 
+                  </p>
+                </div>
+                <button class="hidden-overlay" id="loot-box">Open a loot box for $10 for the chance to unlock</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-battlepass" class="monetization-section">
+            <h2 class="mb-3">Season passes & Subscriptions</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                  Two very similar methods are season passes and subscriptions. 
+                  Both of these have you pay a certain amount every month or so for some in-game effect. 
+                  There are several ways to do this, one is a “battle pass” where you have to play the 
+                  game to unlock new rewards, and you get premium rewards by buying the season pass. 
+                  Another way is the subscription “unlocks” certain parts of the game. 
+                  Both ways work through a recurring payment that is cancellable, 
+                  but it can be easy for players to forget they have the payment 
+                  every month, and are getting billed for something they don't use. 
+
+                  <br>
+                  <br>
+
+                  A game that does Subscriptions well is RuneScape. RuneScape has a free to play version and a 
+                  paid Membership version of the game. The membership version unlocks a lot more content 
+                  and things for players to do, and the free version is comparatively lackluster. 
+                  However, RuneScape lets you buy the subscription with in-game money without
+                  needing to spend anything. If a player has enough patience and wants to
+                   grind for the membership, they can, all it takes is patience. 
+                   A game that does this poorly is World of Warcraft which has the same 
+                   subscription without the ability to obtain it in game. 
+                   This means it's at least $155 to play the game and all of its 
+                   content for only 1 year. Keep in mind that it has been out f
+                   or 21 years. This can be predatory and expensive for many p
+                   layers who want to keep billing players who stop playing but 
+                   forget to cancel their subscription and spend much more money than they might have. 
+                    
+                  </p>
+                  <button id = "cancel">Cancel</button>
+                </div>
+                <button class="hidden-overlay" id="battlepass">Pay $10 every 10 seconds</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-bonus" class="monetization-section">
+            <h2 class="mb-3">Bonuses</h2>
+            <div class="row mon-text-card">
+              <div class="card mon col-md-11">
+                <div class="card-body ">
+                  <p class="mon-text">
+                  Some games let you pay for progression bonuses.
+                   Let's say it's a game like Adventure Capitalist, 
+                   where the goal is to make money. You can pay to buy bonuses that 
+                   increase the amount of money you make for example. 
+                   These are often known as “pay-to-win” mechanics, where you have 
+                   to pay money to win the game, or at least win faster. 
+
+                   <br>
+                   <br>
+
+                  Games like Adventure Capitalist let you progress without paying money, 
+                  and you can get the whole experience for free. However, 
+                  if you want to progress faster, you may find the option 
+                  of paying some money to speed up progress a fun and 
+                  engaging option. This lets these games be free, and 
+                  accessible for most players while still maintaining 
+                  revenue for the developer. An example of a game that
+                   does this poorly is Clash Royale. Clash Royale is a 
+                   competitive 1 vs 1 multiplayer game, where you can “level up” 
+                   your own power by collecting a certain amount of cards per level.
+                    However you can pay to buy these cards, 
+                    and often paying is the only way to get to the highest level, 
+                    which you need to be competitive in the game. 
+                    It is very difficult, if not impossible, to be competitive without 
+                    spending hundreds of dollars buying these cards. 
+                  </p>
+                </div>
+                <button class="hidden-overlay" id="bonus">
+                Pay $50 dollars to unlock, but get $1 back every 10 seconds
+                </button>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
-
   </main>
+
+      <section class="footer-section" id="footer-section" aria-labelledby="footer-heading">
+      <div class="row">
+        <div class="col-md-2">
+          <a class="footer-link" href="index.html">Home</a>
+        </div>
+        <div class="col-md-2">
+          <a class="footer-link" href="stakeholders.html">Stakeholders</a>
+        </div>
+        <div class="col-md-2">
+          <a class="footer-link" href="monetizations.html">Monetization</a>
+        </div>
+              <div class="col-md-2 ms-auto">
+        <a class="footer-link" href="https://github.com/HenryN-B/Ethics-Final">Source Code</a>
+    </div>
+      </div>
+  </section>
 
 
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/monetizations.js"></script>
 
+  <div id="ad-overlay" class="ad-overlay hidden">
+    <div class="ad-popup">
+      <button id="ad-close" class="ad-close hidden" aria-label="Close advertisement">✕</button>
+      <img src="static/images/ad.png" alt="Advertisement" class="ad-img">
+    </div>
+  </div>
 </body>
 </html>
