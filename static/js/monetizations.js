@@ -13,6 +13,7 @@ const skin = document.getElementById("skin-button");
 const lootbox = document.getElementById("loot-box");
 const battlepass = document.getElementById("battlepass");
 const bonus = document.getElementById("bonus");
+const remove_skins = document.getElementById("remove-skins");
 
 const cancel = document.getElementById("cancel");
 const sections = document.querySelectorAll(".monetization-section");
@@ -21,12 +22,30 @@ const navLinks = document.querySelectorAll(".stakeholder-nav-link");
 const input_switch = document.getElementById("toggle-switch");
 
 input_switch.addEventListener("click", function(event){ 
-    upfront.classList.toggle("hidden");
-    dlc.classList.toggle("hidden")
-    ad.classList.toggle("hidden")
-    lootbox.classList.toggle("hidden")
-    battlepass.classList.toggle("hidden")
-    bonus.classList.toggle("hidden")
+    if(!input_switch.checked) {
+        upfront.classList.add("hidden");
+        dlc.classList.add("hidden");
+        ad.classList.add("hidden");
+        lootbox.classList.add("hidden");
+        battlepass.classList.add("hidden");
+        bonus.classList.add("hidden");
+        cancel.classList.add("hidden");
+        const cards = document.querySelectorAll('.mon');
+        console.log(cards);
+        cards.forEach((card) => {
+            card.style.backgroundColor = "transparent";
+        });
+        skin.classList.add("hidden");
+    } else {
+        upfront.classList.remove("hidden");
+        dlc.classList.remove("hidden");
+        ad.classList.remove("hidden");
+        lootbox.classList.remove("hidden");
+        battlepass.classList.remove("hidden");
+        bonus.classList.remove("hidden");
+        cancel.classList.remove("hidden");
+        skin.classList.remove("hidden");
+    }
 
 });
 
@@ -96,12 +115,20 @@ skin.addEventListener("click", function(event) {
     }
     money -= 10;
     const cards = document.querySelectorAll('.mon');
-    console.log(cards);
     cards.forEach((card) => {
         card.style.backgroundColor = "rgb(245, 179, 189)";
     });
     updateMoney();
 });
+
+remove_skins.addEventListener("click", function(event) {
+    const cards = document.querySelectorAll('.mon');
+    cards.forEach((card) => {
+        card.style.backgroundColor = "transparent";
+    });
+    updateMoney();
+});
+
 
 // lootbox click event 
 lootbox.addEventListener("click", function(event) {
@@ -112,9 +139,20 @@ lootbox.addEventListener("click", function(event) {
         }
         money -= 10;
         updateMoney();
-        if (lootbox_trys < 4) {
+        if (lootbox_trys == 0) {
+            lootbox_trys += 1;
+            alert("You won 3 pengles");
+            money +=3;
+            updateMoney();
+        } else if (lootbox_trys == 1) {
             lootbox_trys += 1;
             alert("Unlucky you lost");
+        } else if (lootbox_trys == 2) {
+            lootbox_trys += 1;
+            alert("You won 20 pengles");
+            money +=3;
+            updateMoney();
+
         } else {
             lootbox.classList.add("hidden");
         }

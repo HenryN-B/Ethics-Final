@@ -69,7 +69,7 @@
     </p>
 
     <div class="form-check form-switch mt-3">
-      <input class="form-check-input" type="checkbox" role="switch" id="toggle-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="toggle-switch" checked>
       <label class="form-check-label" for="toggle-switch">Toggle interactive element</label>
     </div>
 
@@ -86,7 +86,6 @@
               <p class="fw-semibold mb-3">Jump to section</p>
               <ul class="list-unstyled mb-0" id="monetization-nav">
                 <li><a class="stakeholder-nav-link" href="#section-upfront">Upfront Price Tag</a></li>
-                <li><a class="stakeholder-nav-link" href="#section-dlc">Downloadable Content (DLC)</a></li>
                 <li><a class="stakeholder-nav-link" href="#section-ads">Ads</a></li>
                 <li><a class="stakeholder-nav-link" href="#section-skins">Skins</a></li>
                 <li><a class="stakeholder-nav-link" href="#section-lootbox">Lootboxes</a></li>
@@ -159,13 +158,8 @@
                       trapping them in addictions or hidden subscriptions, 
                       thus respecting a person's own rights. 
                     </p>
-                </div>
-                <button class="hidden-overlay" id="upfront">Pay $60 to unlock</button>
-              </div>
-            </div>
-          </div>
 
-          <div id="section-dlc" class="monetization-section">
+                    <div id="section-dlc" class="monetization-section">
             <h2 class="mb-3">Downloadable Contact(DLC)</h2>
             <div class="row mon-text-card">
               <div class="card mon col-md-11">
@@ -211,10 +205,16 @@
                     and it let's studios keep making money off an old game. 
                     </p>
                 </div>
-                <button class="hidden-overlay" id="dlc">Pay a extra $20 to unlock</button>
+                <button class="hidden-overlay" id="dlc">Pay a extra 20 pengles to unlock</button>
               </div>
             </div>
           </div>
+                </div>
+                <button class="hidden-overlay" id="upfront">Pay 60 pengles to unlock</button>
+              </div>
+            </div>
+          </div>
+
 
           <div id="section-ads" class="monetization-section">
             <h2 class="mb-3">Ads</h2>
@@ -302,8 +302,13 @@
                     This lets most players play for free and those who want to can 
                     customize their appearance in whatever way they wish. 
                   </p>
-                  <button aria-label="Button to buy a skin" class = "skin-button" id = "skin-button">
+                  <div class = "row">
+                  <button aria-label="Button to buy a skin" class = "col-md-6 skin-button" id = "skin-button">
                   Buy a skin for all buttons!</button>
+
+                  <button class = "col-md-2" id="remove-skins">Remove Skins</button>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -353,7 +358,7 @@
                          which is very harmful to the players. 
                   </p>
                 </div>
-                <button class="hidden-overlay" id="loot-box">Open a loot box for $10 for the chance to unlock</button>
+                <button class="hidden-overlay" id="loot-box">Open a loot box for 10 pengles for the chance to unlock</button>
               </div>
             </div>
           </div>
@@ -393,7 +398,7 @@
                   </p>
                   <button id = "cancel">Cancel</button>
                 </div>
-                <button class="hidden-overlay" id="battlepass">Pay $10 every 10 seconds</button>
+                <button class="hidden-overlay" id="battlepass">Pay 10 pengles every 10 seconds</button>
               </div>
             </div>
           </div>
@@ -432,7 +437,7 @@
                   </p>
                 </div>
                 <button class="hidden-overlay" id="bonus">
-                Pay $50 dollars to unlock, but get $1 back every 10 seconds
+                Pay 50 pengles to unlock, but get 1 pengle back every 10 seconds
                 </button>
               </div>
             </div>
