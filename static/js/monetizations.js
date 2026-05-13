@@ -1,9 +1,11 @@
 let money = 0;
+let seashells = 0;
 let lootbox_trys =0;
 let battlepassInterval = null;
 
 const money_button = document.getElementById("money-button");
 const money_count = document.getElementById("money-count");
+const sea_count = document.getElementById("sea-count");
 
 const upfront = document.getElementById("upfront");
 const dlc_box = document.getElementById("dlc-cont");
@@ -14,6 +16,7 @@ const lootbox = document.getElementById("loot-box");
 const battlepass = document.getElementById("battlepass");
 const bonus = document.getElementById("bonus");
 const remove_skins = document.getElementById("remove-skins");
+const inapp = document.getElementById("in-app");
 
 const cancel = document.getElementById("cancel");
 const sections = document.querySelectorAll(".monetization-section");
@@ -185,6 +188,18 @@ battlepass.addEventListener("click", function(event) {
     }, 10000);
 });
 
+inapp.addEventListener("click", function(event) {
+    if (money < 10) {
+        alert("Need more pengles");
+        return;
+    }
+    else {
+        seashells +=10;
+        money -=10;
+        updateMoney();
+    }
+});
+
 cancel.addEventListener("click", function () {
     clearInterval(battlepassInterval);
     battlepass.classList.remove("hidden");
@@ -204,7 +219,7 @@ bonus.addEventListener("click", function () {
 
     // add every 10 seconds
     const bonusInterval = setInterval(function () {
-        money += 10;
+        seashells += 10;
         updateMoney();
 
     }, 10000);
@@ -212,6 +227,7 @@ bonus.addEventListener("click", function () {
 
 function updateMoney() {
     money_count.innerText = money;
+    sea_count.innerText = seashells;
 }
 
 
